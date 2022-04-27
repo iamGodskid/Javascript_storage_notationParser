@@ -38,3 +38,4 @@ isDev: true
 */
 ```
 ### happy coding
+### [for more gini file tutorial]("https://github.com/iamGodskid/Gini File")
