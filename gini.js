@@ -1,7 +1,6 @@
 function parseGINIFile(opt) {
 // Start with an object to hold the top-level fields
-let options=opt
-let uri=options.url
+let uri=opt
 let result = {};
 let section = result;
 let invalid=!/^\s*(!._*)?$/
@@ -17,7 +16,7 @@ return new Promise(res=>{
 xml.open("GET", uri, true);
 xml.onload=function(){
   
-  if(this.readyState==4 && this.status== 200){
+  if(this.readyState==4 && this.status == 200){
 
   var string=this.responseText
 if(verify.test(string)){
@@ -35,7 +34,7 @@ else if (!/^\s*(!._*)?$/.test(line)) {
 line.replace(invalid, "");
 }
 });
-res(result);
+res(JSON.stringify(result));
 }else{
   res("parser failure")
 }
