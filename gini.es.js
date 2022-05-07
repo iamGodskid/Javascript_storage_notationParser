@@ -1,7 +1,6 @@
-function parseGINIFile(opt) {
+ction parseGINIFile(opt) {
 // Start with an object to hold the top-level fields
-let options=opt
-let uri=options.url
+let uri=opt
 let result = {};
 let section = result;
 let invalid=!/^\s*(!._*)?$/
@@ -34,7 +33,7 @@ else if (!/^\s*(!._*)?$/.test(line)) {
 line.replace(invalid, "");
 }
 });
-res(result);
+res(JSON.parse(result));
 }else{
   res("parser failure")
 }
