@@ -37,4 +37,4 @@ new parseGINIFile("file.gini")
 */
 ```
 ### happy coding
-["for more gini file tutorial"*]("https://github.com/iamGodskid/Gini_File")
+[for more gini file tutorial]("https://github.com/iamGodskid/Gini-File")
