@@ -1,5 +1,5 @@
 # GiniFileParser
-a parser that reads gini files into javascript objects
+a parser that reads gini files into stringified objects
 
 ## installation
 download from github and reference
@@ -26,16 +26,15 @@ ______________
 
 ```javascript
 
-new parseGINIFile({
-url: "file.gini"
-}).then(res=>console.log(res))
+new parseGINIFile("file.gini")
+.then(res=>console.log(res))
 
 /*output 
-user:{
-name:"decode",
-isDev: true
-}
+"user":{
+"name":"decode",
+"isDev": "true"
+}"
 */
 ```
 ### happy coding
-### [for more gini file tutorial]("https://github.com/iamGodskid/Gini File")
+["for more gini file tutorial"*]("https://github.com/iamGodskid/Gini_File")
