@@ -1,4 +1,4 @@
-ction parseGINIFile(opt) {
+function parseGINIFile(opt) {
 // Start with an object to hold the top-level fields
 let uri=opt
 let result = {};
