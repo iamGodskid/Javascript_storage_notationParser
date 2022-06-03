@@ -1,6 +1,10 @@
 # GiniFileParser
 a parser that reads gini files into stringified objects
 
+
+## note
+gini parser v2 has an extra  feature of reading  js objects back to gini format
+
 ## installation
 download from github and reference
 
@@ -36,6 +40,50 @@ new parseGINIFile("file.gini")
 }"
 */
 ```
+
+#### to use the jsontogini parser in v2
+```javascript
+
+//note
+/*the jsontogini returns an array and the first array item is the complete parsed string
+
+const data = {
+users:{
+"a": "decode",
+"b": "dev bash",
+"c": "tobi",
+"d": "dev evans",
+"e": "anyaeji"
+},
+
+areDevs: "true"
+}
+
+
+new JSONtoGINI(data)
+.then(res=>console.log(res[0]))
+
+
+//output
+_______________
+[users]
+a=decode
+b=dev bash
+c=tobi
+d=dev evans
+e=anyaeji
+
+_______________
+[areDevs]
+areDevs=true
+
+
+```
+
+
+
+
+
 ### happy coding
 ### for more gini file tutorial
 https://github.com/iamGodskid/Gini-File
