@@ -46,7 +46,7 @@ new parseGINIFile("file.gini")
 
 //note
 /*the jsontogini returns an array and the first array item is the complete parsed string
-
+*/
 const data = {
 users:{
 "a": "decode",
