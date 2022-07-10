@@ -1,4 +1,4 @@
-function parseGINIFile(opt) {
+function parseJSSNFile(opt) {
 // Start with an object to hold the top-level fields
 let uri=opt
 let result = {};
