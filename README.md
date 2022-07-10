@@ -85,5 +85,5 @@ areDevs=true
 
 
 ### happy coding
-### for more gini file tutorial
+### for more jssn file tutorial
 https://github.com/iamGodskid/Javascript_storage_notation
