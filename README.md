@@ -1,24 +1,24 @@
-# GiniFileParser
-a parser that reads gini files into stringified objects
+# Javascript storage notation Parser
+a parser that reads jssn files into stringified javascript objects
 
 
 ## note
-gini parser v2 has an extra  feature of reading  js objects back to gini format
+jssnparser v2 has an extra  feature of reading  js objects back to gini format
 
 ## installation
 download from github and reference
 
 ```javascript
-<script src="path/to/gini.js"></script>
+<script src="path/to/jssn.js"></script>
 //or import the es module
-import parseGINIFile from "./path/to/gini.es.js"
+import parseJSSNFile from "./path/to/jssn.es.js"
 ```
 
 the parser is promise based so you can do
 
-**file.gini**
-```gini
-<@GINI@>
+**file.jssn**
+```jssn
+<@JSSN@>
 !this is a valid gini file
 [user]
 name=decode
@@ -30,7 +30,7 @@ ______________
 
 ```javascript
 
-new parseGINIFile("file.gini")
+new parseJSSNFile("file.jssn")
 .then(res=>console.log(res))
 
 /*output 
@@ -41,7 +41,7 @@ new parseGINIFile("file.gini")
 */
 ```
 
-#### to use the jsontogini parser in v2
+#### to use the jsontojssn parser in v2
 ```javascript
 
 //note
@@ -60,7 +60,7 @@ areDevs: "true"
 }
 
 
-new JSONtoGINI(data)
+new JSONtoJSSN(data)
 .then(res=>console.log(res[0]))
 
 
@@ -86,4 +86,4 @@ areDevs=true
 
 ### happy coding
 ### for more gini file tutorial
-https://github.com/iamGodskid/Gini-File
+https://github.com/iamGodskid/Javascript_storage_notation
