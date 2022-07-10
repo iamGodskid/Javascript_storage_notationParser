@@ -5,7 +5,7 @@ let result = {};
 let section = result;
 let invalid=!/^\s*(!._*)?$/
 var xml;
-let verify=/^<@GINI@>/gi
+let verify=/^<@JSSN@>/gi
 if(window.XMLHttpRequest){
   xml=new XMLHttpRequest()
 }else{
