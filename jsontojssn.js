@@ -1,4 +1,4 @@
-var JSONtoGINI=function(param){
+var JSONtoJSSN=function(param){
   "use strict"
   //check typeof param
   var $data;
