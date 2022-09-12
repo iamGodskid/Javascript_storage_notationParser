@@ -41,6 +41,14 @@ new parseJSSNFile("file.jssn")
 */
 ```
 
+
+### jssn parser V3 is out, it supports arrays and comments in jssn
+#### Array = {}
+#### comments
+single line = ! hello
+multi line = /* hello */
+
+
 #### to use the jsontojssn parser in v2
 ```javascript
 
